@@ -4,7 +4,7 @@ Giter8 templates to create sbt multi-layered project
 
 ##Usage
 
-Make an `sample` directory for example.
+Make a `sample` directory for example.
 
 ```
 mkdir sample
@@ -56,7 +56,7 @@ sbt malt-lib/test
 [success] Total time: 7 s, completed 2014/11/03 19:36:49
 ```
 
-Host layer's application which uses this also works fine.
+Host layer's application using this also works fine.
 
 ```
 sbt malt-app/run
@@ -67,7 +67,7 @@ hello, BeerApps!
 
 ### To add another sub-project
 
-Use `slate-template-sub` on `sample` directory.
+Use `slate-template-sub` in `sample` directory.
 
 ```
 g8 file://Slate/slate-template-sub/
@@ -81,7 +81,7 @@ app_prefix [slate]: malt
 Template applied in ./beer-apps
 ```
 
-Files are created similary (except for build definitions)
+Files are created similarly (except for build definitions)
 
 ```
 find ./beer-apps/malt-stout -type f

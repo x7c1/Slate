@@ -10,7 +10,7 @@ object SlateBuild extends Build {
       "-feature"
     ),
     libraryDependencies ++= Seq(
-      "org.specs2" %% "specs2" % "2.3.12" % "test"
+      "org.scalatest" % "scalatest_2.11" % "2.2.1" % Test
     )
   )
   lazy val `slate-app` = project.

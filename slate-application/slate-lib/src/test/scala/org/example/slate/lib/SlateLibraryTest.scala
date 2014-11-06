@@ -1,13 +1,13 @@
 package org.example.slate.lib
 
-import org.specs2.mutable.Specification
+import org.scalatest.{FunSpec, Matchers}
 
-object SlateLibraryTest extends Specification {
+class SlateLibraryTest extends FunSpec with Matchers {
 
-  SlateLibrary.getClass.getSimpleName should{
-    "create message" in {
+  describe(SlateLibrary.getClass.getSimpleName){
+    it("should create message"){
       val message = SlateLibrary createMessageFor "earthlings"
-      "hello, earthlings!" === message
+      message should be("hello, earthlings!")
     }
   }
 }

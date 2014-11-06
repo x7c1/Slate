@@ -1,13 +1,13 @@
 package $organization$.$app_prefix$.lib
 
-import org.specs2.mutable.Specification
+import org.scalatest.{FunSpec, Matchers}
 
-object $app_prefix;format="Camel"$LibraryTest extends Specification {
+class $app_prefix;format="Camel"$LibraryTest extends FunSpec with Matchers {
 
-  $app_prefix;format="Camel"$Library.getClass.getSimpleName should{
-    "create message" in {
+  describe($app_prefix;format="Camel"$Library.getClass.getSimpleName){
+    it("should create message"){
       val message = $app_prefix;format="Camel"$Library createMessageFor "earthlings"
-      "hello, earthlings!" === message
+      message should be("hello, earthlings!")
     }
   }
 }

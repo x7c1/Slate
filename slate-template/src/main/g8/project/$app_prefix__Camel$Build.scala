@@ -4,13 +4,13 @@ import Keys._
 object $app_prefix;format="Camel"$Build extends Build {
 
   val $app_prefix$Settings = Seq(
-    scalaVersion := "2.11.2",
+    scalaVersion := "2.11.7",
     scalacOptions ++= Seq(
       "-deprecation",
       "-feature"
     ),
     libraryDependencies ++= Seq(
-      "org.scalatest" % "scalatest_2.11" % "2.2.1" % Test
+      "org.scalatest" % "scalatest_2.11" % "2.2.4" % Test
     )
   )
   lazy val `$app_prefix$-app` = project.
@@ -26,4 +26,3 @@ object $app_prefix;format="Camel"$Build extends Build {
       `$app_prefix$-lib`
     )
 }
-
